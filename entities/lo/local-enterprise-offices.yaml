@@ -11,7 +11,7 @@ entity:
       valid_from: 2026-10-06T00:00:00.000Z
   category: other
 profile:
-  summary: Local Enterprise Offices provide state-funded business supports, including start-up grants, to microenterprises across Ireland.
+  summary: There are 31 Local Enterprise Offices located in Ireland, each providing support for small businesses, including business start-up grants available to micro enterprises within the first 18 months of start-up.
   description: Local Enterprise Offices deliver local enterprise development supports, including start-up grants to Irish microenterprises.
   links:
     site: https://www.localenterprise.ie/
@@ -23,7 +23,7 @@ programs:
     program_slug: priming-grant
     program_slug_aliases: []
     title: Priming Grant
-    summary: A business start-up grant for microenterprises within their first 18 months, covering capital, salary, consultancy, innovation, marketing and general overhead costs.
+    summary: A business start-up grant for micro enterprises within their first 18 months of start-up, covering capital, salary, consultancy, innovation, marketing and general overhead costs.
     source_ids:
       - src_3070b9610ba96aa0357fe6653c223920c6f7a3e613244d653b87c4f9953b072b
 offers:
@@ -32,8 +32,8 @@ offers:
     offer_slug: priming-grant
     offer_slug_aliases: []
     title: Priming Grant for new microenterprises
-    summary: Eligible microenterprises within their first 18 months can receive a Priming Grant of up to 50% of eligible investment, capped at EUR 80,000, or up to EUR 150,000 in exceptional cases.
-    description: The grant can be used for capital items, salary costs, consultancy, innovation and marketing costs, and general overhead costs. Grant amounts at or above EUR 50,000, or with a cumulative value of EUR 100,000 over three years, require Enterprise Ireland approval. Employment support is capped at EUR 15,000 per full-time job created, subject to the 50% limit.
+    summary: Eligible micro enterprises within their first 18 months of start-up may be awarded a Priming Grant of up to 50% of the investment or EUR 150,000, whichever is the lesser.
+    description: The maximum Priming Grant payable shall be 50% of the investment or EUR 150,000, whichever is the lesser. In all other cases, the maximum grant shall be 50% of the investment or EUR 80,000, whichever is the lesser. All grants of a value greater than or equal to EUR 50,000, or with a cumulative value of EUR 100,000 over three years, require Enterprise Ireland approval. Subject to the 50% limit, a maximum grant of EUR 15,000 per full-time job created shall apply in respect of any employment support granted. Expenditure may be considered under the headings of capital items, salary costs, consultancy/innovation/marketing costs, and general overhead costs.
     lifecycle:
       status: active
       effective_from: 2026-10-06T00:00:00.000Z
@@ -41,22 +41,25 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: >-
-            Up to 50% of eligible investment for qualifying start-up costs,
-            normally capped at EUR 80,000. Exceptional projects with a clear
-            potential to graduate to Enterprise Ireland may qualify for up to
-            EUR 150,000.
-          kind: credit
+            The maximum Priming Grant payable is 50% of the investment or EUR
+            150,000, whichever is the lesser; in all other cases the maximum
+            grant is 50% of the investment or EUR 80,000, whichever is the
+            lesser (subject to Enterprise Ireland approval for grants of EUR
+            50,000 or more, or cumulative EUR 100,000 over three years).
+          kind: cashback
           value:
-            amount:
-              currency: EUR
-              minor_units: 8000000
-            kind: up-to
+            kind: money
+            value:
+              kind: up-to
+              amount:
+                currency: EUR
+                minor_units: 15000000
       consideration:
         kind: variable
         description: >-
-          The applicant co-funds at least 50% of the eligible investment. Grant
-          values at or above EUR 50,000 or cumulative EUR 100,000 over three
-          years require Enterprise Ireland approval.
+          The applicant co-funds the balance of the eligible investment, so the
+          maximum grant payable is 50% of the investment or EUR 150,000,
+          whichever is the lesser.
     eligibility:
       rule:
         kind: all
@@ -64,15 +67,11 @@ offers:
           - criterion_id: cri_01
             kind: manual
             reason: vendor-discretion
-            statement: The enterprise must be within its first 18 months of start-up.
+            statement: Eligible clients may be awarded a Priming Grant within the first eighteen months of setting up the business.
           - criterion_id: cri_02
-            kind: predicate
-            fact: company.employee_count
-            operator: lte
-            value:
-              type: number
-              value: 10
-            statement: The enterprise must not employ more than 10 people.
+            kind: manual
+            reason: external-verification
+            statement: The enterprise must not employ more than 10 people; in some cases, depending on certain criteria, businesses with 10 employees or more may be eligible, subject to your Local Enterprise Office advisor confirming eligibility.
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
@@ -84,18 +83,17 @@ offers:
           - criterion_id: cri_05
             kind: manual
             reason: external-verification
-            statement: The enterprise must demonstrate a market for its product or service.
+            statement: The enterprise must demonstrate a market for the product/service.
           - criterion_id: cri_06
             kind: manual
             reason: external-verification
-            statement: The enterprise must show potential for growth in domestic and/or export markets and potential for new job creation.
+            statement: The enterprise must have potential for growth in domestic and/or export markets and also potential for new job creation.
     roles:
       terms_authority_entity_id: ent_01m485sfe2fh78f9x282k29e7b
       access_operator_entity_id: ent_01m485sfe2fh78f9x282k29e7b
     access:
       availability: public
-      method: form
-      url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
-      instructions: Apply through your Local Enterprise Office; a local advisor confirms eligibility and the application process for the Priming Grant.
+      method: contact
+      instructions: Contact your Local Enterprise Office advisor to confirm eligibility and the application process for the Priming Grant.
     source_ids:
       - src_3070b9610ba96aa0357fe6653c223920c6f7a3e613244d653b87c4f9953b072b
