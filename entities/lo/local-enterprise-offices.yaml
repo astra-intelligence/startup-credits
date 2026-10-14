@@ -41,25 +41,23 @@ offers:
       benefits:
         - benefit_id: ben_01
           description: >-
-            The maximum Priming Grant payable is 50% of the investment or EUR
-            150,000, whichever is the lesser; in all other cases the maximum
-            grant is 50% of the investment or EUR 80,000, whichever is the
-            lesser (subject to Enterprise Ireland approval for grants of EUR
-            50,000 or more, or cumulative EUR 100,000 over three years).
-          kind: cashback
-          value:
-            kind: money
-            value:
-              kind: up-to
-              amount:
-                currency: EUR
-                minor_units: 15000000
+            The maximum Priming Grant payable shall be 50% of the investment or
+            EUR 150,000, whichever is the lesser; in all other cases the maximum
+            grant shall be 50% of the investment or EUR 80,000, whichever is the
+            lesser. All grants of a value greater than or equal to EUR 50,000, or
+            with a cumulative value of EUR 100,000 over three years, require
+            Enterprise Ireland approval. Subject to the 50% limit, a maximum
+            grant of EUR 15,000 per full-time job created shall apply in respect
+            of any employment support granted. Expenditure may be considered
+            under the headings of capital items, salary costs,
+            consultancy/innovation/marketing costs, and general overhead costs.
+          kind: other
       consideration:
         kind: variable
         description: >-
-          The applicant co-funds the balance of the eligible investment, so the
-          maximum grant payable is 50% of the investment or EUR 150,000,
-          whichever is the lesser.
+          The applicant co-funds at least 50% of the eligible investment. Grant
+          values at or above EUR 50,000, or with a cumulative value of EUR
+          100,000 over three years, require Enterprise Ireland approval.
     eligibility:
       rule:
         kind: all
@@ -94,6 +92,7 @@ offers:
     access:
       availability: public
       method: contact
-      instructions: Contact your Local Enterprise Office advisor to confirm eligibility and the application process for the Priming Grant.
+      url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
+      instructions: Apply through your Local Enterprise Office; a local advisor confirms eligibility and the application process for the Priming Grant.
     source_ids:
       - src_3070b9610ba96aa0357fe6653c223920c6f7a3e613244d653b87c4f9953b072b
