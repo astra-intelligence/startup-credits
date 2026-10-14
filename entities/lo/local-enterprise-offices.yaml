@@ -44,13 +44,8 @@ offers:
             The maximum Priming Grant payable shall be 50% of the investment or
             EUR 150,000, whichever is the lesser; in all other cases the maximum
             grant shall be 50% of the investment or EUR 80,000, whichever is the
-            lesser. All grants of a value greater than or equal to EUR 50,000, or
-            with a cumulative value of EUR 100,000 over three years, require
-            Enterprise Ireland approval. Subject to the 50% limit, a maximum
-            grant of EUR 15,000 per full-time job created shall apply in respect
-            of any employment support granted. Expenditure may be considered
-            under the headings of capital items, salary costs,
-            consultancy/innovation/marketing costs, and general overhead costs.
+            lesser. Grants of EUR 50,000 or more, or cumulative EUR 100,000 over
+            three years, require Enterprise Ireland approval.
           kind: other
       consideration:
         kind: variable
