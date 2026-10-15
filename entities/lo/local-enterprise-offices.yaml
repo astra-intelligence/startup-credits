@@ -12,7 +12,7 @@ entity:
   category: other
 profile:
   summary: There are 31 Local Enterprise Offices located in Ireland, each providing support for small businesses, including business start-up grants available to micro enterprises within the first 18 months of start-up.
-  description: Local Enterprise Offices deliver local enterprise development supports, including start-up grants to Irish microenterprises.
+  description: There are 31 Local Enterprise Offices located in Ireland, each providing support for small businesses, including business start-up grants for micro enterprises within their first 18 months of start-up.
   links:
     site: https://www.localenterprise.ie/
 sources:
@@ -50,9 +50,11 @@ offers:
       consideration:
         kind: variable
         description: >-
-          The applicant co-funds at least 50% of the eligible investment. Grant
-          values at or above EUR 50,000, or with a cumulative value of EUR
-          100,000 over three years, require Enterprise Ireland approval.
+          The maximum Priming Grant payable shall be 50% of the investment or
+          EUR 150,000, whichever is the lesser, so the applicant co-funds the
+          remaining share of the eligible investment. All grants of a value
+          greater than or equal to EUR 50,000, or with a cumulative value of
+          EUR 100,000 over three years, require Enterprise Ireland approval.
     eligibility:
       rule:
         kind: all
@@ -88,6 +90,6 @@ offers:
       availability: public
       method: contact
       url: https://www.localenterprise.ie/discover-business-supports/funding-and-grants/financial-supports/priming-grant/
-      instructions: Apply through your Local Enterprise Office; a local advisor confirms eligibility and the application process for the Priming Grant.
+      instructions: Contact your Local Enterprise Office advisor for more information on eligibility and the application process for the Priming Grant.
     source_ids:
       - src_3070b9610ba96aa0357fe6653c223920c6f7a3e613244d653b87c4f9953b072b
